@@ -1,5 +1,7 @@
 # Unreleased
 
+## Bugfixes
+- Fixes a bug where the app would crash if a databinding resolved to an incompatible type (e.g. binding a number property to a boolean value). (Marshal.TryConvertTo would throw exception instead of fail gracefully).
 
 ## 1.0
 
